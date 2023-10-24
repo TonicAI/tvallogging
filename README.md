@@ -57,7 +57,7 @@ Tonic Validate helps you develop your retrieval augmented generation (RAG) syste
    ```
 5. Review how your RAG system is performing in the Tonic Validate UI.
    <p align="center">
-     <img src="./docs/README_images/project_page_overall_score_chart.png" width="600"/>
+     <img src="./README_images/project_page_overall_score_chart.png" width="600"/>
    </p>
 
 # Documentation and Tonic Validate Metrics
