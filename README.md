@@ -49,7 +49,7 @@ Tonic Validate helps you develop your retrieval augmented generation (RAG) syste
        question = question_with_answer.question
    
        llm_answer: str # answer obtained from the RAG system
-       context_list: List[str] # list of context retrieved by the RAG system
+       retrieved_context_list: List[str] # list of context retrieved by the RAG system
    
        # log the llm_answer and retrieved_context_list to Tonic Validate
        # in this step, the RAG metrics are calculated locally
