@@ -3,7 +3,7 @@ name = "tvallogging"
 version = "0.0.1"
 description = "Logging for Tonic Validate"
 authors = ["Joe Ferrara <joeferrara@tonic.ai>"]
-readme = "README.md"
+readme = "pypi_readme.md"
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4.0.0"
