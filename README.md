@@ -3,7 +3,7 @@
   <img src="./README_images/tonic-validate-light.svg#gh-light-mode-only" width="600" alt="Tonic Validate" />
 </p>
 
-Tonic Validate helps you develop your retrieval augmented generation (RAG) system by providing RAG metrics and a platform for tracking and evaluating experiments and changes to your RAG system. This is **Tonic Validate Logging**, the logging component of Tonic Validate - how you send your RAG system output to the Tonic Validate Application. When you log RAG system outputs using Tonic Validate Logging, the outputs are scored using [Tonic Validate Metrics](https://github.com/TonicAI/tvalmetrics), and then the outputs and scores are sent to the [Tonic Validate Application](https://validate.tonic.ai), where the outputs and responses are visualized allowing you to easily track the performance of you RAG system.
+Tonic Validate helps you develop your retrieval augmented generation (RAG) applications by providing RAG metrics and a platform for tracking and evaluating experiments and changes to your RAG applications. This is **Tonic Validate Logging**, the logging component of Tonic Validate - how you send your RAG application output to the Tonic Validate Application. When you log your RAG application outputs using Tonic Validate Logging, the outputs are scored using [Tonic Validate Metrics](https://github.com/TonicAI/tvalmetrics), and then the outputs and scores are sent to the [Tonic Validate Application](https://validate.tonic.ai), where the outputs and responses are visualized allowing you to easily track the performance of you RAG application.
 
 *  [Tonic Vaidation Documentation](https://docs.tonic.ai/validate/)
 
@@ -15,7 +15,7 @@ Tonic Validate helps you develop your retrieval augmented generation (RAG) syste
    pip install tvallogging
    ```
 3. [Get a Tonic Validate API key](https://docs.tonic.ai/validate/getting-started-with-tonic-validate/tonic-validate-obtain-sdk-access-token), and set it in your environment as the `TONIC_VALIDATE_API_KEY` environment variable.
-4. Set up a project and a benchmark dataset of questions and reference answers, and the log your RAG system responses to the questions in the benchmark. Use the following code snippet to get started. Tonic Validate uses LLM assisted evaluation to score your RAG responses, so in addition to assuming you have the `TONIC_VALIDATE_API_KEY` environment variable set to you Tonic Validate API Key, it also assumes you have the `OPENAI_API_KEY` environment variable set so Open AI models can be used to evaluate your RAG responses.
+4. Set up a project and a benchmark dataset of questions and reference answers, and the log your RAG application responses to the questions in the benchmark. Use the following code snippet to get started. Tonic Validate uses LLM assisted evaluation to score your RAG responses, so in addition to assuming you have the `TONIC_VALIDATE_API_KEY` environment variable set to you Tonic Validate API Key, it also assumes you have the `OPENAI_API_KEY` environment variable set so Open AI models can be used to evaluate your RAG responses.
    ```python
    import os
    # to set the environment variables via python
@@ -48,14 +48,14 @@ Tonic Validate helps you develop your retrieval augmented generation (RAG) syste
    
        question = question_with_answer.question
    
-       llm_answer: str # answer obtained from the RAG system
-       retrieved_context_list: List[str] # list of context retrieved by the RAG system
+       llm_answer: str # answer obtained from the RAG application
+       retrieved_context_list: List[str] # list of context retrieved by the RAG application
    
        # log the llm_answer and retrieved_context_list to Tonic Validate
        # in this step, the RAG metrics are calculated locally
        run.log(question_with_answer, llm_answer, retrieved_context_list)
    ```
-5. Review how your RAG system is performing in the Tonic Validate UI.
+5. Review how your RAG application is performing in the Tonic Validate UI.
    <p align="center">
      <img src="./README_images/project_page_overall_score_chart.png" width="600"/>
    </p>
