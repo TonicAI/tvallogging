@@ -1,7 +1,8 @@
-<p align="center">
-  <img src="./README_images/tonic-validate-dark.svg#gh-dark-mode-only" width="600" alt="Tonic Validate" />
-  <img src="./README_images/tonic-validate-light.svg#gh-light-mode-only" width="600" alt="Tonic Validate" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="./README_images/TonicValidate-Horizontal-Dark-Icon.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./README_images/TonicValidate-Horizontal-White-Icon.svg">
+  <img src="./README_images/TonicValidate-Horizontal-Dark-Icon.svg">
+</picture>
 
 Tonic Validate helps you develop your retrieval augmented generation (RAG) applications by providing RAG metrics and a platform for tracking and evaluating experiments and changes to your RAG applications. This is **Tonic Validate Logging**, the logging component of Tonic Validate - how you send your RAG application output to the Tonic Validate Application. When you log your RAG application outputs using Tonic Validate Logging, the outputs are scored using [Tonic Validate Metrics](https://github.com/TonicAI/tvalmetrics), and then the outputs and scores are sent to the [Tonic Validate Application](https://validate.tonic.ai), where the outputs and responses are visualized allowing you to easily track the performance of you RAG application.
 
