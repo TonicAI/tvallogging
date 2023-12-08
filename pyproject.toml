@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tvallogging"
-version = "0.0.3"
+version = "1.0.0"
 description = "Logging for Tonic Validate"
 authors = ["Joe Ferrara <joeferrara@tonic.ai>"]
 readme = "pypi_readme.md"
